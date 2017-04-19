@@ -4,7 +4,7 @@ using namespace std;
 
 float func(float a)
 {
-    return 1/(1+a);
+    return 1/(1+a*a);
 }
 
 int main()

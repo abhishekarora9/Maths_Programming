@@ -1,16 +1,16 @@
-#include <iostream.h>
-#include <conio.h>
+#include <iostream>
+using namespace std;
 #include <math.h>
 using namespace std;
 
 float func(float x)
 {
-    return (sqrt(1 + pow(x, 2)));
+    return (1/(1+x*x));
 }
 
 int main()
 {
-    clrscr();
+    //clrscr();
     float a, b;
     cout << "ENTER THE LIMITS OF EQUATION" << endl;
     cin >> a >> b;
@@ -28,6 +28,6 @@ int main()
     float ans = start + end + 2 * sum;
     ans = h / 2 * (ans);
     cout << ans;
-    getch();
+    //getch();
     return 0;
 }
